@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html -->
+<html lang="it"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gianmarco Marzotto — Analisi, metodo e formazione sui mercati</title>
+<meta name="description" content="Trader, investitore dal 2019. Analisi macro, stock picking, advisory 1:1, community e la piattaforma Horaizon. Metodo, non promesse.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Gianmarco Marzotto — Analisi, metodo e formazione sui mercati_files/css2" rel="stylesheet">
+<!-- ============================================================================
+  ISTRUZIONI PER IL PROGRAMMATORE — link e asset da sistemare
+  1) IMMAGINE: carica "gian-profile.jpg" nella stessa cartella di questo file
+     (oppure aggiorna il percorso in <img class="portrait-img" src="...">).
+  2) LINK: sono già impostati dove noti. Cerca "PAGAMENTO:" per i punti dove
+     Gianmarco inserirà i link ai checkout del server (placeholder "#").
+  3) VIDEO YOUTUBE: cerca "VIDEO_ID" e sostituisci con l'ID del video da mostrare.
+     Link già impostati:
+     - Advisory/Coaching  -> https://marzottogianmarco.github.io/ADVISORY1TO1/
+     - Horaizon waitlist  -> horaizon-waitlist.html (carica anche quella pagina)
+     - Newsletter Substack-> https://marzottogianmarco.substack.com/
+     - YouTube            -> https://www.youtube.com/@GianmarcoMarzotto
+     - Telegram           -> https://t.me/gianmarcomarzotto
+     - Instagram          -> https://www.instagram.com/gianmarcomarzotto/
+  ============================================================================ -->
+<style>
+  :root{
+    --ink:#12100E; --ink-2:#1A1714; --ink-3:#242019; --hair:#332C23;
+    --bone:#F1ECE3; --bone-dim:#D2CABC; --taupe:#9C9482;
+    --brass:#C8A96A; --brass-dim:#8C7645; --oxblood:#96574A;
+    --maxw:1120px; --pad:clamp(1.25rem,5vw,2.5rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--ink);color:var(--bone-dim);font-family:'Instrument Sans',system-ui,sans-serif;font-size:clamp(1rem,1.05vw,1.1rem);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--brass);color:var(--ink)}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;color:var(--bone);font-weight:420;line-height:1.06;letter-spacing:-0.015em}
+  em{font-style:italic;color:var(--brass)}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--brass);display:inline-block;margin-bottom:1.4rem}
+
+  header.bar{position:sticky;top:0;z-index:50;background:rgba(18,16,14,0.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+  .bar-inner{max-width:var(--maxw);margin:0 auto;padding:0.9rem var(--pad);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .mark{font-family:'JetBrains Mono',monospace;font-size:0.8rem;letter-spacing:0.14em;color:var(--bone);text-transform:uppercase}
+  .mark span{color:var(--brass)}
+  nav.top{display:flex;gap:1.5rem;align-items:center}
+  nav.top a{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--taupe);transition:color .2s}
+  nav.top a:hover{color:var(--bone)}
+  .bar-cta{font-family:'JetBrains Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid var(--brass-dim);color:var(--bone);padding:0.55rem 1.05rem;border-radius:2px;transition:background .25s,color .25s,border-color .25s;white-space:nowrap}
+  .bar-cta:hover{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+
+  /* HERO with portrait */
+  .hero{position:relative;border-bottom:1px solid var(--hair);overflow:hidden}
+  .hero .grid{max-width:var(--maxw);margin:0 auto;padding:clamp(3rem,7vw,5.5rem) var(--pad);display:grid;grid-template-columns:1.08fr 0.92fr;gap:2.5rem;align-items:center;position:relative;z-index:2}
+  .hero-wave{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.2}
+  .hero .kicker{font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:1.5rem;display:block}
+  .hero h1{font-size:clamp(2.5rem,5.3vw,4.4rem);max-width:14ch;margin-bottom:1.5rem}
+  .hero .lede{font-size:clamp(1.1rem,1.5vw,1.32rem);color:var(--bone);max-width:46ch;margin-bottom:2.3rem;line-height:1.5}
+  .hero .lede strong{color:var(--brass);font-weight:600}
+  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+  .portrait{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/4.6;background:#000}
+  .portrait-img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(1.02) contrast(1.02)}
+  .portrait::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--ink) 0%,rgba(18,16,14,0) 22%),linear-gradient(0deg,rgba(18,16,14,.35),rgba(18,16,14,0) 30%);pointer-events:none}
+
+  .btn{display:inline-flex;align-items:center;gap:0.7rem;background:var(--brass);color:var(--ink);font-family:'JetBrains Mono',monospace;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500;padding:1rem 1.7rem;border-radius:2px;border:1px solid var(--brass);transition:transform .2s ease,background .25s,box-shadow .25s;cursor:pointer}
+  .btn:hover{background:#D8BC80;transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(200,169,106,.5)}
+  .btn.ghost{background:transparent;color:var(--bone);border-color:var(--brass-dim)}
+  .btn.ghost:hover{background:var(--ink-2);box-shadow:none}
+  .btn svg{width:15px;height:15px}
+
+  section.blk{padding:clamp(3.5rem,8vw,6rem) 0;border-top:1px solid var(--hair)}
+  section.blk:first-of-type{border-top:none}
+  .blk h2{font-size:clamp(1.85rem,3.6vw,3rem);margin-bottom:1.5rem;max-width:22ch}
+  .lead-p{font-size:clamp(1.05rem,1.3vw,1.2rem);color:var(--bone-dim)}
+  .div-wave{display:block;width:100%;height:26px;opacity:.4;color:var(--brass)}
+  .sec-label{display:flex;align-items:baseline;gap:1rem;margin-bottom:1.4rem}
+  .sec-label .num{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--brass-dim);letter-spacing:.1em}
+
+  /* CHI SONO */
+  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start}
+  .facts{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:3px;overflow:hidden}
+  .fact{padding:1.1rem 1.4rem;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+  .fact:first-child{border-top:none}
+  .fact .k{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--taupe)}
+  .fact .v{font-family:'Fraunces',serif;color:var(--bone);font-size:1.02rem;text-align:right}
+  .pull{font-family:'Fraunces',serif;font-size:clamp(1.25rem,1.9vw,1.55rem);color:var(--bone);line-height:1.35;margin-top:2rem;padding-left:1.4rem;border-left:2px solid var(--brass)}
+
+  /* SERVICE BLOCK (coaching, horaizon) */
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:2.5rem}
+  .svc.rev-cols .svc-media{order:2}
+  .svc-body h3{font-size:clamp(1.6rem,2.4vw,2.1rem);margin-bottom:1rem}
+  .svc-body p{color:var(--bone-dim);margin-bottom:1.5rem}
+  .svc-list{list-style:none;display:flex;flex-direction:column;gap:.85rem;margin:1.5rem 0 2rem}
+  .svc-list li{display:flex;gap:.8rem;color:var(--bone-dim);font-size:.99rem;line-height:1.45}
+  .svc-list svg{flex:0 0 auto;width:17px;height:17px;color:var(--brass);margin-top:.22rem}
+  .price-tag{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--bone);letter-spacing:.04em;margin-bottom:1.6rem;padding:.9rem 1.1rem;border:1px solid var(--brass-dim);border-radius:3px;display:inline-block}
+  .price-tag b{color:var(--brass);font-size:1.05rem}
+  .svc-card{border:1px solid var(--hair);border-radius:4px;background:linear-gradient(160deg,var(--ink-2),var(--ink));padding:2.2rem;position:relative;overflow:hidden}
+  .svc-card .big{font-family:'Fraunces',serif;font-size:clamp(2.4rem,4vw,3.2rem);color:var(--bone);line-height:1}
+  .svc-card .cap{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:1.2rem}
+  .metric-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:3px;overflow:hidden;margin-top:1.4rem}
+  .metric-row .m{background:var(--ink);padding:1rem 1.1rem}
+  .metric-row .m .mv{font-family:'Fraunces',serif;color:var(--bone);font-size:1.3rem}
+  .metric-row .m .mk{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--taupe);margin-top:.2rem}
+
+  /* SERVER SERVICES GRID */
+  .multiverso{background:var(--ink-2);border-top:1px solid var(--hair)}
+  .chan{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+  .chan .c{border:1px solid var(--hair);border-radius:3px;background:var(--ink);padding:1.7rem 1.5rem;transition:border-color .3s,transform .3s}
+  .chan .c:hover{border-color:var(--brass-dim);transform:translateY(-3px)}
+  .chan .c .ci{width:34px;height:34px;color:var(--brass);margin-bottom:1rem}
+  .chan .c h4{font-family:'Fraunces',serif;color:var(--bone);font-size:1.25rem;font-weight:420;margin-bottom:.5rem}
+  .chan .c p{font-size:.93rem;color:var(--taupe);line-height:1.5}
+  .mv-cta{margin-top:2.6rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+  .mv-note{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--taupe);letter-spacing:.04em}
+
+  /* ANALISI / VIDEO / NEWSLETTER */
+  .video-wrap{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--hair);border-radius:4px;overflow:hidden;background:var(--ink-2)}
+  .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .an-side h3{font-size:1.5rem;margin-bottom:.9rem}
+  .an-side p{color:var(--bone-dim);margin-bottom:1.5rem;font-size:1rem}
+  .an-actions{display:flex;flex-direction:column;gap:.9rem;align-items:flex-start}
+
+  /* QUOTES */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+  .quote{border:1px solid var(--hair);border-radius:3px;padding:1.9rem 1.7rem;background:var(--ink-2);display:flex;flex-direction:column;gap:1.2rem}
+  .quote .qmark{font-family:'Fraunces',serif;color:var(--brass);font-size:2.4rem;line-height:0.5;height:0.6em}
+  .quote p{font-size:0.99rem;color:var(--bone-dim);flex:1}
+  .quote .who{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.06em;color:var(--taupe);text-transform:uppercase}
+
+  /* FINAL */
+  .final .inner{border:1px solid var(--brass-dim);border-radius:4px;padding:clamp(2.2rem,5vw,3.5rem);background:linear-gradient(160deg,var(--ink-2),var(--ink))}
+  .final h2{max-width:none}
+  .final p{max-width:56ch;margin-bottom:2rem}
+
+  footer{border-top:1px solid var(--hair);padding:3rem 0}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem}
+  .foot-grid .col p, .foot-grid .col a{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:var(--taupe);display:block;line-height:2}
+  .foot-grid .col a:hover{color:var(--bone)}
+  .foot-legal{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--hair);font-size:.78rem;color:var(--taupe);line-height:1.7;max-width:80ch}
+
+  .rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .rev.in{opacity:1;transform:none}
+
+  @media(max-width:880px){
+    nav.top{display:none}
+    .hero .grid{grid-template-columns:1fr;gap:2rem}
+    .portrait{max-width:360px;aspect-ratio:4/4.4}
+    .about-grid,.svc,.an-grid{grid-template-columns:1fr!important}
+    .svc.rev-cols .svc-media{order:0}
+    .chan,.quotes{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.rev{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="bar-inner">
+    <div class="mark">GIANMARCO <span>MARZOTTO</span></div>
+    <nav class="top">
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#coaching">Coaching 1:1</a>
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#multiverso">Il Multiverso</a>
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#horaizon">Horaizon</a>
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#analisi">L'Analisi</a>
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#chi-sono">Chi sono</a>
+    </nav>
+    <a href="https://marzottogianmarco.github.io/ADVISORY1TO1/" class="bar-cta">Candidati</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <svg class="hero-wave" id="heroWave" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+    <path id="wavePath" fill="none" stroke="var(--brass)" stroke-width="1.2" opacity="0.9" d="M0,300 L0.0,300.0 L8.0,308.8 L16.0,317.4 L24.0,325.8 L32.0,333.7 L40.0,341.1 L48.0,347.9 L56.0,353.9 L64.0,359.1 L72.0,363.3 L80.0,366.6 L88.0,368.8 L96.0,369.9 L104.0,369.9 L112.0,368.8 L120.0,366.6 L128.0,363.3 L136.0,359.1 L144.0,353.9 L152.0,347.9 L160.0,341.1 L168.0,333.7 L176.0,325.8 L184.0,317.4 L192.0,308.8 L200.0,300.0 L208.0,291.2 L216.0,282.6 L224.0,274.2 L232.0,266.3 L240.0,258.9 L248.0,252.1 L256.0,246.1 L264.0,240.9 L272.0,236.7 L280.0,233.4 L288.0,231.2 L296.0,230.1 L304.0,230.1 L312.0,231.2 L320.0,233.4 L328.0,236.7 L336.0,240.9 L344.0,246.1 L352.0,252.1 L360.0,258.9 L368.0,266.3 L376.0,274.2 L384.0,282.6 L392.0,291.2 L400.0,300.0 L408.0,308.8 L416.0,317.4 L424.0,325.8 L432.0,333.7 L440.0,341.1 L448.0,347.9 L456.0,353.9 L464.0,359.1 L472.0,363.3 L480.0,366.6 L488.0,368.8 L496.0,369.9 L504.0,369.9 L512.0,368.8 L520.0,366.6 L528.0,363.3 L536.0,359.1 L544.0,353.9 L552.0,347.9 L560.0,341.1 L568.0,333.7 L576.0,325.8 L584.0,317.4 L592.0,308.8 L600.0,300.0 L608.0,291.2 L616.0,282.6 L624.0,274.2 L632.0,266.3 L640.0,258.9 L648.0,252.1 L656.0,246.1 L664.0,240.9 L672.0,236.7 L680.0,233.4 L688.0,231.2 L696.0,230.1 L704.0,230.1 L712.0,231.2 L720.0,233.4 L728.0,236.7 L736.0,240.9 L744.0,246.1 L752.0,252.1 L760.0,258.9 L768.0,266.3 L776.0,274.2 L784.0,282.6 L792.0,291.2 L800.0,300.0 L808.0,308.8 L816.0,317.4 L824.0,325.8 L832.0,333.7 L840.0,341.1 L848.0,347.9 L856.0,353.9 L864.0,359.1 L872.0,363.3 L880.0,366.6 L888.0,368.8 L896.0,369.9 L904.0,369.9 L912.0,368.8 L920.0,366.6 L928.0,363.3 L936.0,359.1 L944.0,353.9 L952.0,347.9 L960.0,341.1 L968.0,333.7 L976.0,325.8 L984.0,317.4 L992.0,308.8 L1000.0,300.0 L1008.0,291.2 L1016.0,282.6 L1024.0,274.2 L1032.0,266.3 L1040.0,258.9 L1048.0,252.1 L1056.0,246.1 L1064.0,240.9 L1072.0,236.7 L1080.0,233.4 L1088.0,231.2 L1096.0,230.1 L1104.0,230.1 L1112.0,231.2 L1120.0,233.4 L1128.0,236.7 L1136.0,240.9 L1144.0,246.1 L1152.0,252.1 L1160.0,258.9 L1168.0,266.3 L1176.0,274.2 L1184.0,282.6 L1192.0,291.2 L1200.0,300.0" style="stroke-dasharray: 1505.79; stroke-dashoffset: 0; transition: stroke-dashoffset 2.6s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+    <path id="wavePath2" fill="none" stroke="var(--brass-dim)" stroke-width="0.8" opacity="0.5" d="M0,300 L0.0,398.0 L8.0,401.9 L16.0,405.0 L24.0,407.4 L32.0,409.0 L40.0,409.9 L48.0,409.9 L56.0,409.3 L64.0,407.8 L72.0,405.6 L80.0,402.7 L88.0,399.0 L96.0,394.7 L104.0,389.6 L112.0,384.0 L120.0,377.7 L128.0,371.0 L136.0,363.7 L144.0,356.0 L152.0,347.8 L160.0,339.4 L168.0,330.6 L176.0,321.7 L184.0,312.6 L192.0,303.4 L200.0,294.2 L208.0,285.0 L216.0,276.0 L224.0,267.1 L232.0,258.4 L240.0,250.0 L248.0,242.0 L256.0,234.4 L264.0,227.2 L272.0,220.6 L280.0,214.5 L288.0,209.0 L296.0,204.1 L304.0,200.0 L312.0,196.5 L320.0,193.7 L328.0,191.7 L336.0,190.5 L344.0,190.0 L352.0,190.3 L360.0,191.4 L368.0,193.2 L376.0,195.8 L384.0,199.1 L392.0,203.1 L400.0,207.8 L408.0,213.1 L416.0,219.1 L424.0,225.6 L432.0,232.6 L440.0,240.1 L448.0,248.1 L456.0,256.4 L464.0,265.0 L472.0,273.8 L480.0,282.8 L488.0,292.0 L496.0,301.2 L504.0,310.4 L512.0,319.5 L520.0,328.5 L528.0,337.3 L536.0,345.8 L544.0,354.0 L552.0,361.9 L560.0,369.3 L568.0,376.2 L576.0,382.5 L584.0,388.3 L592.0,393.5 L600.0,398.0 L608.0,401.9 L616.0,405.0 L624.0,407.4 L632.0,409.0 L640.0,409.9 L648.0,409.9 L656.0,409.3 L664.0,407.8 L672.0,405.6 L680.0,402.7 L688.0,399.0 L696.0,394.7 L704.0,389.6 L712.0,384.0 L720.0,377.7 L728.0,371.0 L736.0,363.7 L744.0,356.0 L752.0,347.8 L760.0,339.4 L768.0,330.6 L776.0,321.7 L784.0,312.6 L792.0,303.4 L800.0,294.2 L808.0,285.0 L816.0,276.0 L824.0,267.1 L832.0,258.4 L840.0,250.0 L848.0,242.0 L856.0,234.4 L864.0,227.2 L872.0,220.6 L880.0,214.5 L888.0,209.0 L896.0,204.1 L904.0,200.0 L912.0,196.5 L920.0,193.7 L928.0,191.7 L936.0,190.5 L944.0,190.0 L952.0,190.3 L960.0,191.4 L968.0,193.2 L976.0,195.8 L984.0,199.1 L992.0,203.1 L1000.0,207.8 L1008.0,213.1 L1016.0,219.1 L1024.0,225.6 L1032.0,232.6 L1040.0,240.1 L1048.0,248.1 L1056.0,256.4 L1064.0,265.0 L1072.0,273.8 L1080.0,282.8 L1088.0,292.0 L1096.0,301.2 L1104.0,310.4 L1112.0,319.5 L1120.0,328.5 L1128.0,337.3 L1136.0,345.8 L1144.0,354.0 L1152.0,361.9 L1160.0,369.3 L1168.0,376.2 L1176.0,382.5 L1184.0,388.3 L1192.0,393.5 L1200.0,398.0" style="stroke-dasharray: 1629.52; stroke-dashoffset: 0; transition: stroke-dashoffset 2.6s cubic-bezier(0.16, 1, 0.3, 1);"></path>
+  </svg>
+  <div class="grid">
+    <div>
+      <span class="kicker rev in">Trader · Investitore · Formatore dal 2019</span>
+      <h1 class="rev in">I mercati si affrontano con un <em>metodo</em>.</h1>
+      <p class="lede rev in">Sono Gianmarco Marzotto. Analisi macro e ciclica, stock picking e operatività su forex e indici. Qui trovi il mio lavoro, i percorsi con cui seguo <strong>personalmente</strong> chi vuole costruire competenza reale, e gli strumenti che sto sviluppando.</p>
+      <div class="hero-ctas rev in">
+        <a href="https://marzottogianmarco.github.io/ADVISORY1TO1/" class="btn">Il coaching 1:1
+          <svg viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path>
+          </svg>
+        </a>
+        <a href="#analisi" class="btn ghost">Leggi l'Analisi della Settimana</a>
+      </div>
+    </div>
+
+    <div class="portrait rev in">
+      <img
+        class="portrait-img"
+        src="https://drive.google.com/uc?export=view&id=1_TBXp6aPeBpRvFOnLr1oI8sgxSIjFUIE"
+        alt="Gianmarco Marzotto"
+        loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHI SONO ============ -->
+<section class="blk" id="chi-sono">
+  <div class="wrap">
+    <div class="sec-label rev in"><span class="num">01</span><span class="eyebrow" style="margin:0">Chi sono</span></div>
+    <div class="about-grid">
+      <div>
+        <h2 class="rev in" style="max-width:none">Un professionista dei mercati. Dati, ricerca e disciplina.</h2>
+        <p class="lead-p rev in" style="margin-top:1.4rem">Trader e investitore indipendente, formatore dal 2019, laureato in Economia all'Università di Verona. La mia operatività nasce dal lavoro settimanale di ricerca con il mio mentore, ex trader di Morgan Stanley, e copre un portafoglio a 360°: forex e indici nel breve, stock picking e posizioni di lungo periodo sull'azionario, con un focus particolare sull'analisi ciclica — per cui sto sviluppando una piattaforma proprietaria.</p>
+        <p class="pull rev">Non prometto guadagni: nessun professionista serio può farlo. Prometto metodo, rigore e trasparenza — e li pretendo da chi lavora con me.</p>
+      </div>
+      <div class="facts rev in">
+        <div class="fact"><span class="k">Sui mercati dal</span><span class="v">2019</span></div>
+        <div class="fact"><span class="k">Formazione</span><span class="v">Economia · Verona</span></div>
+        <div class="fact"><span class="k">Ricerca con</span><span class="v">Mentore ex Morgan Stanley</span></div>
+        <div class="fact"><span class="k">Operatività</span><span class="v">Forex · Indici · Azionario</span></div>
+        <div class="fact"><span class="k">Specialità</span><span class="v">Stock picking · Analisi ciclica</span></div>
+        <div class="fact"><span class="k">In sviluppo</span><span class="v">Horaizon</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="div-wave wrap" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 C100,4 200,4 300,20 C400,36 500,36 600,20 C700,4 800,4 900,20 C1000,36 1100,36 1200,20" fill="none" stroke="currentColor" stroke-width="1"></path></svg>
+
+<!-- ============ COACHING 1:1 ============ -->
+<section class="blk" id="coaching">
+  <div class="wrap">
+    <div class="sec-label rev"><span class="num">02</span><span class="eyebrow" style="margin:0">Il servizio di punta</span></div>
+    <div class="svc">
+      <div class="svc-body">
+        <h3 class="rev">Coaching 1:1</h3>
+        <p class="rev">90 giorni di affiancamento diretto con me: costruiamo la tua strategia personalizzata, le tue regole di gestione del rischio e la disciplina per applicarle, fino alla tua autonomia. Un percorso cucito su di te, non un corso da guardare.</p>
+        <ul class="svc-list rev">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>8 call one-to-one dirette con me + registrazioni</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Strategia personalizzata su forex e indici, ogni timeframe</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Gestione del rischio, disciplina e lavoro sulla psicologia</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Supporto continuo su Telegram, anche dopo il percorso</li>
+        </ul>
+        <div class="price-tag rev"><b>€ 3.500</b> · su candidatura · posti limitati</div><br>
+        <a href="https://marzottogianmarco.github.io/ADVISORY1TO1/" class="btn rev">Candidati al percorso
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path></svg>
+        </a>
+      </div>
+      <div class="svc-media rev">
+        <div class="svc-card">
+          <div class="cap">Percorso 1:1</div>
+          <div class="big">90 giorni</div>
+          <div class="metric-row">
+            <div class="m"><div class="mv">8</div><div class="mk">Call one-to-one</div></div>
+            <div class="m"><div class="mv">1:1</div><div class="mk">Sempre con me</div></div>
+            <div class="m"><div class="mv">∞</div><div class="mk">Registrazioni</div></div>
+            <div class="m"><div class="mv">Telegram</div><div class="mk">Supporto continuo</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IL MULTIVERSO (SERVER — servizi distinti) ============ -->
+<section class="blk multiverso" id="multiverso">
+  <div class="wrap">
+    <div class="sec-label rev"><span class="num">03</span><span class="eyebrow" style="margin:0">La community</span></div>
+    <h2 class="rev">Il Multiverso: il server dove seguo i mercati ogni giorno.</h2>
+    <p class="lead-p rev" style="max-width:60ch">Non un gruppo segnali, ma un ambiente di lavoro. Dentro trovi aree distinte, ciascuna con uno scopo preciso: dall'operatività quotidiana alla ricerca macro, dalla formazione al confronto diretto.</p>
+    <div class="chan">
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><path d="M4 20l7-8 5 5 8-10" stroke="currentColor" stroke-width="1.8"></path><circle cx="24" cy="7" r="2" fill="currentColor"></circle></svg>
+        <h4>Live &amp; operatività</h4>
+        <p>Analisi dei grafici in diretta e condivisione operativa: vedi come ragiono e come opero sui mercati, ogni giorno.</p>
+      </div>
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><rect x="5" y="5" width="22" height="22" rx="2" stroke="currentColor" stroke-width="1.6"></rect><path d="M9 20l4-5 3 3 5-7" stroke="currentColor" stroke-width="1.6"></path></svg>
+        <h4>Analisi macro &amp; ricerca</h4>
+        <p>La sezione deep: studio dei report, interpretazione dei dati macroeconomici e i titoli che seguo nel dettaglio.</p>
+      </div>
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><path d="M6 8h20v13H6z" stroke="currentColor" stroke-width="1.6"></path><path d="M13 14l5 3-5 3z" fill="currentColor"></path></svg>
+        <h4>Formazione</h4>
+        <p>Video lezioni e strategie operative, così da mettere in pratica il metodo e non restare fermi alla teoria.</p>
+      </div>
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><path d="M16 6a5 5 0 015 5v4a5 5 0 01-10 0v-4a5 5 0 015-5z" stroke="currentColor" stroke-width="1.6"></path><path d="M8 15a8 8 0 0016 0M16 23v3" stroke="currentColor" stroke-width="1.6"></path></svg>
+        <h4>Aggiornamenti &amp; podcast</h4>
+        <p>Commenti frequenti e aggiornamenti operativi sui mercati: resti sul pezzo anche quando non sei davanti ai grafici.</p>
+      </div>
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"></circle><circle cx="21" cy="14" r="3" stroke="currentColor" stroke-width="1.6"></circle><path d="M5 25c0-4 3-6 7-6s7 2 7 6M18 25c0-3 2-4.5 5-4.5" stroke="currentColor" stroke-width="1.6"></path></svg>
+        <h4>Community &amp; confronto</h4>
+        <p>Un gruppo di persone che fanno sul serio, dove confrontarsi con me e con gli altri membri sull'operatività reale.</p>
+      </div>
+      <div class="c rev">
+        <svg class="ci" viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" stroke="currentColor" stroke-width="1.5"></path></svg>
+        <h4>Ricerca nuove opportunità</h4>
+        <p>Stock picking, startup e nuove idee: la parte più esplorativa del portafoglio, condivisa con chi vuole approfondire.</p>
+      </div>
+    </div>
+    <div class="mv-cta rev">
+      <!-- PAGAMENTO: inserisci qui il link al checkout del Multiverso -->
+      <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#" class="btn">Entra nel Multiverso
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path></svg>
+      </a>
+      <span class="mv-note">// Se il server ha più livelli d'accesso, qui si possono aggiungere i piani con i rispettivi link.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORAIZON ============ -->
+<section class="blk" id="horaizon">
+  <div class="wrap">
+    <div class="sec-label rev"><span class="num">04</span><span class="eyebrow" style="margin:0">Lo strumento · in sviluppo</span></div>
+    <div class="svc rev-cols">
+      <div class="svc-media rev">
+        <div class="svc-card">
+          <div class="cap">Horaizon · Analisi ciclica</div>
+          <div class="big">Stagionalità</div>
+          <div class="metric-row">
+            <div class="m"><div class="mv">IS / OOS</div><div class="mk">Validazione robusta</div></div>
+            <div class="m"><div class="mv">Sharpe</div><div class="mk">Metriche pro</div></div>
+            <div class="m"><div class="mv">Cicli</div><div class="mk">Finestre stagionali</div></div>
+            <div class="m"><div class="mv">Equity</div><div class="mk">Curve aggregate</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="svc-body">
+        <h3 class="rev">Horaizon</h3>
+        <p class="rev">La piattaforma proprietaria che sto sviluppando per l'analisi ciclica e stagionale delle azioni: individuare in modo sistematico e quantitativo in che fase del ciclo si trova un titolo, con validazione in-sample / out-of-sample e metriche da vera analisi istituzionale. Lo stesso approccio della mia operatività, reso strumento.</p>
+        <ul class="svc-list rev">
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Analisi per finestre stagionali su singoli titoli</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Metriche complete: win rate, profit factor, Sharpe, drawdown</li>
+          <li><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l3.5 3.5L16 5" stroke="currentColor" stroke-width="1.7"></path></svg>Curve equity aggregate e costruzione di portafogli</li>
+        </ul>
+        <a href="file:///C:/Users/marzo/Downloads/horaizon-waitlist.html" class="btn rev">Entra in lista d'attesa
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="div-wave wrap" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0,20 C100,4 200,4 300,20 C400,36 500,36 600,20 C700,4 800,4 900,20 C1000,36 1100,36 1200,20" fill="none" stroke="currentColor" stroke-width="1"></path></svg>
+
+<!-- ============ ANALISI / VIDEO / NEWSLETTER ============ -->
+<section class="blk" id="analisi">
+  <div class="wrap">
+    <div class="sec-label rev"><span class="num">05</span><span class="eyebrow" style="margin:0">Ogni settimana, gratis</span></div>
+    <h2 class="rev">L'Analisi della Settimana.</h2>
+    <p class="lead-p rev" style="max-width:60ch;margin-bottom:2.5rem">Un titolo o un tema macro analizzato con lo stesso processo che uso per operare: contesto macro, fase ciclica, struttura del prezzo. In video qui sotto, e in versione integrale nella newsletter.</p>
+    <div class="svc">
+      <div class="svc-media rev">
+        <div class="video-wrap">
+          <!-- VIDEO_ID: sostituisci VIDEO_ID con l'ID del video YouTube (es. dQw4w9WgXcQ) -->
+          <iframe src="./Gianmarco Marzotto — Analisi, metodo e formazione sui mercati_files/VIDEO_ID.html" title="Analisi della Settimana — Gianmarco Marzotto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="an-side svc-body rev">
+        <h3>Guardala, poi vai a fondo.</h3>
+        <p>La versione video è il modo più veloce per capire come lavoro. La versione integrale, con tutti i grafici e i dati, arriva ogni settimana via newsletter — nessun rumore, solo analisi.</p>
+        <div class="an-actions">
+          <a href="https://marzottogianmarco.substack.com/" class="btn" target="_blank" rel="noopener">Iscriviti alla newsletter
+            <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path></svg>
+          </a>
+          <a href="https://www.youtube.com/@GianmarcoMarzotto" class="btn ghost" target="_blank" rel="noopener">Iscriviti al canale YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEEDBACK ============ -->
+<!-- NOTA GIANMARCO: inserisci i feedback reali dei tuoi clienti. -->
+<section class="blk multiverso">
+  <div class="wrap">
+    <div class="sec-label rev"><span class="num">06</span><span class="eyebrow" style="margin:0">Dicono di me</span></div>
+    <h2 class="rev">Le parole di chi ha lavorato con me.</h2>
+    <div class="quotes">
+      <div class="quote rev"><div class="qmark">“</div><p>[Feedback reale: risultato concreto, cambiamento nell'operatività.]</p><div class="who">— Iniziale · Età · Percorso seguito</div></div>
+      <div class="quote rev"><div class="qmark">“</div><p>[Feedback reale: disciplina, gestione, autonomia raggiunta.]</p><div class="who">— Iniziale · Età · Percorso seguito</div></div>
+      <div class="quote rev"><div class="qmark">“</div><p>[Feedback reale: la storia di chi è partito da zero.]</p><div class="who">— Iniziale · Età · Percorso seguito</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="blk final">
+  <div class="wrap">
+    <div class="inner rev">
+      <span class="eyebrow">Il prossimo passo</span>
+      <h2>Se cerchi promesse, là fuori ne trovi quante ne vuoi.<br>Se cerchi un metodo, sei nel posto giusto.</h2>
+      <p class="lead-p">Inizia dall'analisi gratuita per capire come lavoro. Quando sei pronto a fare sul serio, candidati al coaching: lavoro con poche persone alla volta, e le seguo personalmente.</p>
+      <div class="hero-ctas">
+        <a href="https://marzottogianmarco.github.io/ADVISORY1TO1/" class="btn">Candidati al coaching 1:1
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5"></path></svg>
+        </a>
+        <a href="https://marzottogianmarco.substack.com/" class="btn ghost" target="_blank" rel="noopener">Prima leggi l'analisi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="col">
+        <p style="color:var(--bone)">GIANMARCO MARZOTTO</p>
+        <p>Metodo, non promesse.</p>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/gianmarcomarzotto/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@GianmarcoMarzotto" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://t.me/gianmarcomarzotto" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://marzottogianmarco.substack.com/" target="_blank" rel="noopener">Newsletter</a>
+      </div>
+      <div class="col">
+        <a href="https://marzottogianmarco.github.io/ADVISORY1TO1/">Coaching 1:1</a>
+        <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#multiverso">Il Multiverso</a>
+        <a href="file:///C:/Users/marzo/Downloads/horaizon-waitlist.html">Horaizon</a>
+        <a href="file:///C:/Users/marzo/Downloads/homepage-gianmarcomarzotto_1.html#analisi">L'Analisi della Settimana</a>
+      </div>
+    </div>
+    <p class="foot-legal">© 2026 EVOFIN GROWTH PARTNERS L.L.C.-FZ — Dubai, UAE · TRN: 104418901500001<br>
+    Disclaimer: il trading e l'investimento comportano rischi. I risultati passati non sono indicativi dei risultati futuri. I contenuti di questo sito hanno finalità formativa e informativa e non costituiscono consulenza finanziaria personalizzata né sollecitazione all'investimento.</p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var w=1200; function build(cy,amp,periods,phase){var d='M0,'+cy,step=8;for(var x=0;x<=w;x+=step){var y=cy+amp*Math.sin((x/w)*Math.PI*2*periods+phase);d+=' L'+x.toFixed(1)+','+y.toFixed(1);}return d;}
+    var p1=document.getElementById('wavePath'),p2=document.getElementById('wavePath2');
+    if(p1)p1.setAttribute('d',build(300,70,3,0));
+    if(p2)p2.setAttribute('d',build(300,110,2,1.1));
+    var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    [p1,p2].forEach(function(p){if(!p||reduce)return;var len=p.getTotalLength();p.style.strokeDasharray=len;p.style.strokeDashoffset=len;p.style.transition='stroke-dashoffset 2.6s cubic-bezier(.16,1,.3,1)';requestAnimationFrame(function(){requestAnimationFrame(function(){p.style.strokeDashoffset=0;});});});
+  })();
+  (function(){
+    var els=document.querySelectorAll('.rev');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:0.1});
+    els.forEach(function(e){io.observe(e)});
+  })();
+</script>
+
+
+</body></html>
